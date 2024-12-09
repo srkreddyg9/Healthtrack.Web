@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/HealthTrack.Web.props" />
+</Project>

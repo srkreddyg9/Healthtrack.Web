@@ -1,0 +1,9 @@
+@model HealthTrack.Web.Models.HealthRecord
+
+<h2>@Model.Diagnosis</h2>
+
+<p><strong>Medications:</strong> @Model.Medications</p>
+<p><strong>Notes:</strong> @Model.Notes</p>
+<p><strong>Date:</strong> @Model.Date.ToShortDateString()</p>
+
+<a href="/HealthRecord/Index" class="btn btn-secondary">Back to Health Records</a>

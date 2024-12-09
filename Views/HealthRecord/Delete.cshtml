@@ -1,0 +1,10 @@
+@model HealthTrack.Web.Models.HealthRecord
+
+<h2>Delete Health Record</h2>
+
+<p>Are you sure you want to delete the health record for @Model.Diagnosis?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a href="/HealthRecord/Index" class="btn btn-secondary">Cancel</a>
+</form>

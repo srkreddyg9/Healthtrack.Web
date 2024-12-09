@@ -1,0 +1,23 @@
+@model HealthTrack.Web.Models.HealthRecord
+
+<h2>Add Health Record</h2>
+
+<form asp-action="Add" method="post">
+    <div class="mb-3">
+        <label asp-for="Diagnosis"></label>
+        <input asp-for="Diagnosis" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Medications"></label>
+        <input asp-for="Medications" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Notes"></label>
+        <input asp-for="Notes" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Date"></label>
+        <input asp-for="Date" type="datetime-local" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add Record</button>
+</form>

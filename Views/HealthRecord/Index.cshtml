@@ -1,0 +1,45 @@
+@model List<HealthTrack.Web.Models.HealthRecord>
+
+<h2>Health Records</h2>
+
+<!-- Display flash message -->
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Diagnosis</th>
+            <th>Medications</th>
+            <th>Notes</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.Diagnosis</td>
+                <td>@record.Medications</td>
+                <td>@record.Notes</td>
+                <td>@record.Date.ToShortDateString()</td>
+                <td>
+                    <!-- View Details link -->
+                    <a href="/HealthRecord/Details/@record.Id" class="btn btn-info">View Details</a>
+                    <!-- Edit link -->
+                    <a href="/HealthRecord/Edit/@record.Id" class="btn btn-warning">Edit</a>
+                    <!-- Delete link -->
+                    <a href="/HealthRecord/Delete/@record.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Add Health Record button -->
+<a href="/HealthRecord/Add" class="btn btn-primary">Add Health Record</a>
