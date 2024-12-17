@@ -440,3 +440,4 @@
 /Users/smart/Documents/Project/HealthTrack.Web/bin/Debug/net9.0/output/HealthTrack.Web.deps.json
 /Users/smart/Documents/Project/HealthTrack.Web/bin/Debug/net9.0/output/HealthTrack.Web.runtimeconfig.json
 /Users/smart/Documents/Project/HealthTrack.Web/bin/Debug/net9.0/output/HealthTrack.Web.staticwebassets.endpoints.json
+/Users/smart/Documents/Project/HealthTrack.Web/obj/Debug/net9.0/HealthTrack.Web.sourcelink.json

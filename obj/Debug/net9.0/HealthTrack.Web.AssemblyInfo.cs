@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthTrack.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adc6552761337aa449e5b6211a9579d325de01d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthTrack.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthTrack.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
